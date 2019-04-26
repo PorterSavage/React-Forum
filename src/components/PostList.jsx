@@ -32,7 +32,8 @@ function PostList() {
           <Post title={post.title}
           link={post.link}
           body={post.body}
-          key={index}/>
+          key={index}
+          />
           ))}
       </div>
     </div>

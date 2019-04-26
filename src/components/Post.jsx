@@ -6,11 +6,18 @@ function Post(props) {
     <div>
       <div>
         <style>{`
-
+          .postDiv {
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-right: 900px;
+            margin-left: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+          }
         `}</style>
       </div>
-      <div>
-        <h1>{props.title}</h1>
+      <div className="postDiv">
+        <h2>{props.title}</h2>
         <p>{props.link}</p>
         <p><em>{props.body}</em></p>
       </div>

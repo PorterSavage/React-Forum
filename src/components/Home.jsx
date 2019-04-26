@@ -1,19 +1,25 @@
 import React from 'react';
-import Post from './Post';
+import PostList from './PostList';
 
 function Home() {
   return (
     <div>
       <div>
         <style>{`
-
+          .posts {
+            margin-top: 5%;          
+          }
+          .forumDiv {
+            margin-top: 10%;
+            text-align: center;
+          }
         `}</style>
       </div>
-      <div>
-        <h1>Home!</h1>
+      <div className="forumDiv">
+        <h1>Forum</h1>
       </div>
-      <div>
-        <Post/>
+      <div className="posts">
+        <PostList/>
       </div>
     </div>
   );
