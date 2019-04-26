@@ -1,6 +1,6 @@
 import React from 'react';
 import PostList from './PostList';
-import Rules from './Rules';
+import RulesControl from './RulesControl';
 
 function Home() {
   return (
@@ -24,7 +24,7 @@ function Home() {
         <PostList/>
       </div>
       <div>
-        <Rules/>
+        <RulesControl/>
       </div>
     </div>
   );
