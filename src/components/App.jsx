@@ -8,12 +8,12 @@ import CreatePost from './CreatePost';
 
 function App() {
   return (
-    <div>
+    <div className="background">
       <div>
         <style jsx global>{`
           .background {
-            background-image: url("https://i.pinimg.com/originals/79/61/3c/79613c9d885607229dda913c97d9ddc9.jpg")
-
+            background-image: url("https://i.pinimg.com/originals/79/61/3c/79613c9d885607229dda913c97d9ddc9.jpg");
+            
           }
           .page {
             margin-left: -8px;
@@ -26,7 +26,7 @@ function App() {
           }
         `}</style>
       </div>
-      <div className="background">
+      <div>
         <div className="nav">
           <Nav/>
         </div>
