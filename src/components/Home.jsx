@@ -1,4 +1,5 @@
 import React from 'react';
+import Post from './Post';
 
 function Home() {
   return (
@@ -10,6 +11,9 @@ function Home() {
       </div>
       <div>
         <h1>Home!</h1>
+      </div>
+      <div>
+        <Post/>
       </div>
     </div>
   );
