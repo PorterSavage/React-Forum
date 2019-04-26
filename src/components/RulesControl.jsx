@@ -39,6 +39,7 @@ class RulesList extends React.Component {
             .show, .hide {
               border: 2px solid black;
               margin-bottom: 8px;
+              background-color: #C580CD;
             }
           `}</style>
         </div>

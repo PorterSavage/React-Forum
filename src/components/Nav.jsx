@@ -8,9 +8,9 @@ function Nav() {
         <style jsx global>{`
           .nav {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             align-content: center;
-            background-image: linear-gradient(white, skyblue);
+            background-image: linear-gradient(white, #68DCDD);
           }
           .fixed {
             position: fixed;
@@ -24,6 +24,8 @@ function Nav() {
             font-family: sans-serif;
             font-weight: lighter;
             margin-left: 35%;
+            text-color: #8A7CB5
+            text-weight: bolder;
           }
           button:hover {
             cursor: pointer;

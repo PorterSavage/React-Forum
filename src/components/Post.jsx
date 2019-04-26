@@ -13,7 +13,11 @@ function Post(props) {
             margin-left: 20px;
             padding-left: 8px;
             font-family: sans-serif;
-            background-color: red;
+            background-image: url("https://66.media.tumblr.com/f363bc2f0d655d3505dbb16dae0119e2/tumblr_ogli3pzLfd1smiv11o1_400.png");
+            background-image: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 800px 150px;
             opacity: 0.6;
           }
         `}</style>
