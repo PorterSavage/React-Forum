@@ -7,24 +7,27 @@ function Home() {
     <div>
       <div>
         <style>{`
-          .posts {
-            margin-top: 75px;           
-          }
           .forumDiv {
             margin-top: 75px;
             text-align: center;
             font-family: sans-serif;
+          }
+          .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
           }
         `}</style>
       </div>
       <div className="forumDiv">
         <h1>Forum</h1>
       </div>
-      <div className="posts">
-        <PostList/>
-      </div>
-      <div>
-        <RulesControl/>
+      <div className="grid">
+        <div className="posts">
+          <PostList/>
+        </div>
+        <div>
+          <RulesControl/>
+        </div>
       </div>
     </div>
   );

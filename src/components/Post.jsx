@@ -9,11 +9,11 @@ function Post(props) {
           .postDiv {
             border: 1px solid black;
             margin-top: 20px;
-            margin-right: 900px;
+            margin-right: 20px;
             margin-left: 20px;
-            display: grid;
-            grid-template-columns: 1fr;
+            padding-left: 8px;
             font-family: sans-serif;
+            background-color: red;
           }
         `}</style>
       </div>

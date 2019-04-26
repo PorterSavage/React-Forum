@@ -5,10 +5,15 @@ function Rules() {
     <div>
       <div>
         <style>{`
-
+          .rulesList {
+            border: 1px solid black;
+            margin-right: 8px;
+            padding-left: 8px;
+            background-color: orange;
+          }
         `}</style>
       </div>
-      <div>
+      <div className="rulesList">
         <h3>Forum Rules:</h3>
         <p>* Constructive threads only</p>
         <p>* No threads that contain melicious content</p>

@@ -5,11 +5,28 @@ function Contact() {
     <div>
       <div>
         <style>{`
-
+          .center {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 75px;
+          }
+          p {
+            font-family: sans-serif;
+            font-size: 50px;
+            text-align: center;
+            border: 2px solid black;
+            margin-right: 20px;
+            margin-left: 20px;
+            background-color: teal;
+          }
         `}</style>
       </div>
+      <div className="center">
+        <h1>Contact</h1>
+      </div>
       <div>
-        <h1>Contact!</h1>
+        <p>If you wish to contact any of our staff:</p>
+        <p>Don't!</p>
       </div>
     </div>
   );

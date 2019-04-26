@@ -36,12 +36,15 @@ class RulesList extends React.Component {
       <div>
         <div>
           <style>{`
-
+            .show, .hide {
+              border: 2px solid black;
+              margin-bottom: 8px;
+            }
           `}</style>
         </div>
         <div>
-          <button onClick={this.handleRulesList.bind(this)}>Show Rules</button>
-          <button onClick={this.hideRuleList.bind(this)}>Hide Rules</button>
+          <button className="show" onClick={this.handleRulesList.bind(this)}>Show Rules</button>
+          <button className="hide" onClick={this.hideRuleList.bind(this)}>Hide Rules</button>
         </div>
         <div>
           {ruleFilter}
