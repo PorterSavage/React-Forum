@@ -20,6 +20,7 @@ function CreatePost() {
             margin-left: 500px;
             padding-top: 10px;
             padding-bottom: 10px;
+            opacity: 0.6;
           }
           textarea {
             width: 400px;

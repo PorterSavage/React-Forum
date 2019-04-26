@@ -10,6 +10,7 @@ function Rules() {
             margin-right: 8px;
             padding-left: 8px;
             background-color: orange;
+            opacity: 0.6;
           }
         `}</style>
       </div>

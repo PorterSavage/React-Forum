@@ -18,6 +18,7 @@ function Contact() {
             margin-right: 20px;
             margin-left: 20px;
             background-color: teal;
+            opacity: 0.6;
           }
         `}</style>
       </div>

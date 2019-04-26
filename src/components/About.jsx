@@ -10,7 +10,7 @@ function About() {
             font-family: sans-serif;
             margin-top: 75px;
           }
-          p {
+          .about {
             font-family: sans-serif;
             text-align: center;
             font-size: 50px;
@@ -20,13 +20,14 @@ function About() {
             padding-right: 8px;
             padding-left: 8px;
             background-color: pink;
+            opacity: 0.6;
           }
         `}</style>
       </div>
       <div className="center">
         <h1>About</h1>
       </div>
-      <div>
+      <div className="about">
         <p>This Is forum created by Porter Savage. This forum was created for every user's benifit and entertainment.</p>
       </div>
     </div>

@@ -14,6 +14,7 @@ function Post(props) {
             padding-left: 8px;
             font-family: sans-serif;
             background-color: red;
+            opacity: 0.6;
           }
         `}</style>
       </div>
