@@ -5,8 +5,10 @@
 This project was created with React
 
 ## Description 
-This Is A web service application that will allow users to make posts and showcase them on the home page.
+This Is A web service application that will allow users to make posts and showcase them on the home page. 
 
+## Differences Angular/React
+* The only differences that I've noticed about the development process would have to be the components. Components in angular are a lot more modular and React components can be based soley on what you want to keep seperate from one another.
 
 ## Specs
 
