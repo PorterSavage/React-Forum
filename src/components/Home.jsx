@@ -1,5 +1,6 @@
 import React from 'react';
 import PostList from './PostList';
+import Rules from './Rules';
 
 function Home() {
   return (
@@ -7,11 +8,12 @@ function Home() {
       <div>
         <style>{`
           .posts {
-            margin-top: 5%;          
+            margin-top: 75px;           
           }
           .forumDiv {
-            margin-top: 10%;
+            margin-top: 75px;
             text-align: center;
+            font-family: sans-serif;
           }
         `}</style>
       </div>
@@ -20,6 +22,9 @@ function Home() {
       </div>
       <div className="posts">
         <PostList/>
+      </div>
+      <div>
+        <Rules/>
       </div>
     </div>
   );

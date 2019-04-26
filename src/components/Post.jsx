@@ -13,6 +13,7 @@ function Post(props) {
             margin-left: 20px;
             display: grid;
             grid-template-columns: 1fr;
+            font-family: sans-serif;
           }
         `}</style>
       </div>
