@@ -1,4 +1,4 @@
-import React from 'reat';
+import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 
 function Nav() {
@@ -20,7 +20,7 @@ function Nav() {
           button {
             background-color: transparent;
             border: none;
-            font-size: 20px;
+            font-size: 15px;
             font-family: sans-serif;
             font-weight: lighter;
             margin-left: 35%;
