@@ -1,6 +1,5 @@
 import React from 'react';
 import v4 from 'uuid';
-import { linkSync } from 'fs';
 
 function CreatePost(props) {
   let title = null;
@@ -50,22 +49,23 @@ function CreatePost(props) {
         <h1>Create Post</h1>
       </div>
       <div className="form">
-        <label htmlFor="title">Title: </label>
-        <input type="text"/>
-        <br/>
-        <label htmlFor="link">Link: </label>
-        <input type="text"/>
-        <br/>
-        <label htmlFor="body">Body: </label>
-        <textarea name="body"></textarea>
-        <button>Post</button>
+        <form onSubmit={handleNewPostSubmission}>
+          <label htmlFor="title">Title: </label>
+          <input type="text"
+          ref={(input) => {title = input;}} />
+          <br/>
+          <label htmlFor="link">Link: </label>
+          <input type="text"
+          ref={(input) => {link = input;}} />
+          <br/>
+          <label htmlFor="body">Body: </label>
+          <textarea name="body"
+          ref={(textarea) => {body = textarea;}}></textarea>
+          <button type='submit'>Post</button>
+          </form>
       </div>
     </div>
   );
 } 
-
-
-
-
 
 export default CreatePost;

@@ -2,7 +2,7 @@ import React from 'react';
 import PostList from './PostList';
 import RulesControl from './RulesControl';
 
-function Home() {
+function Home(props) {
   return (
     <div>
       <div>
@@ -23,7 +23,7 @@ function Home() {
       </div>
       <div className="grid">
         <div className="posts">
-          <PostList/>
+          <PostList postList = {props.postList} />
         </div>
         <div>
           <RulesControl/>
@@ -32,5 +32,8 @@ function Home() {
     </div>
   );
 }
+
+
+
 
 export default Home;
