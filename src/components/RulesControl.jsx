@@ -37,7 +37,6 @@ class RulesList extends React.Component {
         <div>
           <style>{`
             .show, .hide {
-              border: 2px solid black;
               margin-bottom: 8px;
               background-color: #C580CD;
             }
@@ -50,7 +49,7 @@ class RulesList extends React.Component {
               background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
               -webkit-border-radius: 28;
               -moz-border-radius: 28;
-              border-radius: 28px;
+              border-radius: 20px;
               text-shadow: 3px 2px 1px #9daef5;
               -webkit-box-shadow: 6px 5px 24px #666666;
               -moz-box-shadow: 6px 5px 24px #666666;
@@ -58,9 +57,10 @@ class RulesList extends React.Component {
               font-family: sans-serif;
               color: #fafafa;
               font-size: 14px;
-              padding: 19px;
+              padding: 8px;
               font-weight: lighter;
               text-decoration: none;
+              mouseover: curser;
             }
           `}</style>
         </div>

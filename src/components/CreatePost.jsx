@@ -18,6 +18,9 @@ function CreatePost(props) {
     <div>
       <div>
         <style>{`
+          label {
+            font-family: sans-serif;
+          }
           .center {
             font-family: sans-serif;
             text-align: center;

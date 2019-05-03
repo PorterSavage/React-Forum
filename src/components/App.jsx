@@ -28,7 +28,6 @@ class App extends React.Component {
           <style jsx global>{`
             body {
               background-image: url("https://i.pinimg.com/originals/79/61/3c/79613c9d885607229dda913c97d9ddc9.jpg");
-              
             }
             .page {
               margin-left: -8px;
