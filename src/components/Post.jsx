@@ -47,7 +47,7 @@ class Post extends React.Component {
               background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
               -webkit-border-radius: 28;
               -moz-border-radius: 28;
-              border-radius: 28px;
+              border-radius: 20px;
               text-shadow: 3px 2px 1px #9daef5;
               -webkit-box-shadow: 6px 5px 24px #666666;
               -moz-box-shadow: 6px 5px 24px #666666;
