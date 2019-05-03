@@ -57,6 +57,7 @@ class Post extends React.Component {
               font-size: 10px;
               padding: 8px;
               text-decoration: none;
+              mouseover: pointer;
             }
           `}</style>
         </div>
@@ -69,6 +70,12 @@ class Post extends React.Component {
           <br/>
           <button id='vote' className='button' onClick={e => this.upVote(e)}>Up-Vote</button>
           <button id='vote' className='button' onClick={e => this.downVote(e)}>Down-Vote</button>
+          <button id='vote' className='button' onClick={() => this.props.onRemovePost({
+            title: this.props.title,
+            link: this.props.link,
+            body: this.props.body,
+            id: this.props.postId
+            })}>Delete</button>
         </div>
       </div>
     );

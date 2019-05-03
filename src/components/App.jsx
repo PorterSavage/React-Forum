@@ -13,12 +13,25 @@ class App extends React.Component {
       postList: []
     };
     this.handleAddingPostToList = this.handleAddingPostToList.bind(this);
+    this.handleRemovingPostFromList = this.handleRemovingPostFromList.bind(this);
   }
 
   handleAddingPostToList(post) {
     let newPostList = this.state.postList.slice();
     newPostList.push(post);
     this.setState({ postList: newPostList });
+  }
+
+  handleRemovingPostFromList(post) {
+    console.log(post)
+    let newPostList = this.state.postList.slice();
+    for(let i = 0; i < newPostList.length; i++) {
+      console.log(post.id)
+      if(post.id === newPostList[i].id) {
+        newPostList.splice(i, 1)
+      }  
+    }
+    this.setState({ postList: newPostList })
   }
 
   render() {
@@ -48,7 +61,8 @@ class App extends React.Component {
             <Switch>
               <Route 
               exact path='/'
-              render={(props) => <Home { ...props } postList={this.state.postList}/> } />
+              render={(props) => <Home { ...props } postList={this.state.postList}
+              onRemovePost={e => this.handleRemovingPostFromList(e)} /> } />
               <Route path='/about' component={About}/>
               <Route path='/contact' component={Contact}/>
               <Route 

@@ -28,9 +28,11 @@ function PostList(props) {
       <div className='post'>
         {props.postList.map((post) => 
           <Post
+          onRemovePost={props.onRemovePost}
           title={post.title}
           link={post.link}
           body={post.body}
+          postId = {post.id}
           key={post.id}
           />
           )}

@@ -41,7 +41,10 @@ function Home(props) {
       </div>
       <div className="grid">
         <div className="posts">
-          <PostList postList = {props.postList} />
+          <PostList 
+          postList = {props.postList} 
+          onRemovePost = {props.onRemovePost}
+          />
         </div>
         <div>
           <RulesControl/>
