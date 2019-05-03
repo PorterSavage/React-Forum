@@ -26,7 +26,7 @@ class App extends React.Component {
       <div className="background">
         <div>
           <style jsx global>{`
-            .background {
+            body {
               background-image: url("https://i.pinimg.com/originals/79/61/3c/79613c9d885607229dda913c97d9ddc9.jpg");
               
             }

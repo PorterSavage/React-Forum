@@ -35,7 +35,28 @@ class Post extends React.Component {
               background-position: bottom;
               background-repeat: no-repeat;
               background-size: cover;
-              opacity: 0.6;
+              opacity: 0.8;
+            }
+
+            #vote {
+              background: #eb94d0;
+              background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+              background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+              background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+              background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+              background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+              -webkit-border-radius: 28;
+              -moz-border-radius: 28;
+              border-radius: 28px;
+              text-shadow: 3px 2px 1px #9daef5;
+              -webkit-box-shadow: 6px 5px 24px #666666;
+              -moz-box-shadow: 6px 5px 24px #666666;
+              box-shadow: 6px 5px 24px #666666;
+              font-family: sans-serif;
+              color: #fafafa;
+              font-size: 10px;
+              padding: 8px;
+              text-decoration: none;
             }
           `}</style>
         </div>
@@ -46,9 +67,8 @@ class Post extends React.Component {
           <em>Up: {this.state.upVotes}</em> |
           <em>Down: {this.state.downVotes}</em>
           <br/>
-          <button className='button' onClick={e => this.upVote(e)}>Up-Vote</button>
-          <br/>
-          <button className='button' onClick={e => this.downVote(e)}>Down-Vote</button>
+          <button id='vote' className='button' onClick={e => this.upVote(e)}>Up-Vote</button>
+          <button id='vote' className='button' onClick={e => this.downVote(e)}>Down-Vote</button>
         </div>
       </div>
     );

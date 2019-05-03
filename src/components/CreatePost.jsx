@@ -39,9 +39,8 @@ function CreatePost(props) {
             width: 400px;
             height: 250px;
           }
-          button {
-            border: 1px solid black;
-            text-align: center;
+          #post {
+            border: 2px solid black;
           }
         `}</style>
       </div>
@@ -61,7 +60,7 @@ function CreatePost(props) {
           <label htmlFor="body">Body: </label>
           <textarea name="body"
           ref={(textarea) => {body = textarea;}}></textarea>
-          <button type='submit'>Post</button>
+          <button id='post' type='submit'>Post</button>
           </form>
       </div>
     </div>
