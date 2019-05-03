@@ -1,6 +1,20 @@
 import React from 'react';
+import v4 from 'uuid';
+import { linkSync } from 'fs';
 
-function CreatePost() {
+function CreatePost(props) {
+  let title = null;
+  let link = null;
+  let body = null;
+
+  function handleNewPostSubmission(e) {
+    e.preventDefault();
+    props.onAddPostToList({title: title.value, link: link.value, body: body.value, upvotes: 0, downvotes: 0, id: v4()})
+    title.value = '';
+    link.value = '';
+    body.value = '';
+  }
+
   return (
     <div>
       <div>
@@ -48,6 +62,10 @@ function CreatePost() {
       </div>
     </div>
   );
-}
+} 
+
+
+
+
 
 export default CreatePost;
